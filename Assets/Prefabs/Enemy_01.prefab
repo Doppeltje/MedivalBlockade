@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114079287506366364}
   - component: {fileID: 114565366417595960}
   - component: {fileID: 114928959212674516}
+  - component: {fileID: 114375193164394552}
   m_Layer: 8
   m_Name: Enemy_01
   m_TagString: Enemy
@@ -40,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161388822462556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.09, y: 9.9, z: 94.22656}
+  m_LocalPosition: {x: -15.253252, y: 9.6913185, z: 94.22656}
   m_LocalScale: {x: 0.702, y: 0.702, z: 0.702}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,6 +114,23 @@ MonoBehaviour:
   score: {fileID: 0}
   enemy: {fileID: 1161388822462556}
   anim: {fileID: 95219874098760150}
+  health: 30
+--- !u!114 &114375193164394552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161388822462556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13cb14f0f71c8b46a47f655619ca2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redfade: 1
+  bluefade: 1
+  greenfade: 1
+  opacity: 1
+  rend: {fileID: 0}
 --- !u!114 &114565366417595960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,7 +169,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: dff048ec7b7cf884eb2161d859374cc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
